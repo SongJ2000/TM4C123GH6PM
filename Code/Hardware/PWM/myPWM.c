@@ -1,3 +1,12 @@
+/**
+ * PWM:
+ *  普通PWM
+ *  - M1PWM6 - PF2
+ *  - M1PWM7 - PF3
+ *  带死区
+ *  - M0PWM0 - PB6
+ *  - M0PWM1 - PB7
+ */
 #include "PWM/myPWM.h"
 
 void PWM_Init_withDeadBand(void) {

@@ -1,3 +1,11 @@
+/**
+ * OLED:
+ *  - D0  - PA2(SSI0Clk)
+ *  - D1  - PA5(SSI0Tx)
+ *  - DC  - PD1
+ *  - RST - PD2
+ *  - CS  - PD0
+ */
 #include "OLED/oled.h"
 
 #include "OLED/oledfont.h"

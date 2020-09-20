@@ -1,3 +1,8 @@
+/**
+ * IIC:
+ *  - SCL - PB2
+ *  - SDA - PB3
+ */
 #include "IIC/myIIC.h"
 
 #include "inc/hw_gpio.h"

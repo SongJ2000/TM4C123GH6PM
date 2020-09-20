@@ -1,3 +1,9 @@
+/**
+ * DAC:
+ *  - SYNC - PC6
+ *  - SCLK - PC5
+ *  - SDIN - PC4
+ */
 #include "CHIP/DAC081S101/DAC081S101.h"
 
 #define LOW 0
@@ -31,8 +37,7 @@ void DAC081S101_Init(void) {
 }
 
 void DAC081S101_SetOutput(uint16_t val) {
-  if (val < 0 || val > 255) return;
-	//if (val < 40 || val > 92) return;
+  if (val > 255) return;
   val = (val << 4) & 0x0FF0;
   SetSYNC(LOW);
   for (int i = 0; i < 16; i++) {

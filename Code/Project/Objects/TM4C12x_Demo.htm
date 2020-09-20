@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\TM4C12x_Demo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\TM4C12x_Demo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Sep 19 21:49:29 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sun Sep 20 22:14:43 2020
 <BR><P>
 <H3>Maximum Stack Usage =          0 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -11,7 +11,7 @@ Call chain for Maximum Stack Depth:</H3>
 <P>
 <H3>
 Mutually Recursive functions
-</H3> <LI><a href="#[7e]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7e]">SysCtlDelay</a><BR>
+</H3> <LI><a href="#[7d]">SysCtlDelay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[7d]">SysCtlDelay</a><BR>
  <LI><a href="#[1]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1]">NMI_Handler</a><BR>
  <LI><a href="#[2]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[2]">HardFault_Handler</a><BR>
  <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
@@ -214,7 +214,7 @@ Function Pointers
  <LI><a href="#[41]">SSI3_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[6]">SVC_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[26]">SYSCTL_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
- <LI><a href="#[98]">SysTickIntHandler</a> from system.o(.text) referenced from system.o(.text)
+ <LI><a href="#[8b]">SysTickIntHandler</a> from system.o(.text) referenced from system.o(.text)
  <LI><a href="#[9]">SysTick_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[78]">SystemInit</a> from system_tm4c123.o(.text) referenced from startup_tm4c123.o(.text)
  <LI><a href="#[1d]">TIMER0A_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
@@ -230,7 +230,7 @@ Function Pointers
  <LI><a href="#[4b]">TIMER5A_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[4c]">TIMER5B_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[f]">UART0_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
- <LI><a href="#[a6]">UART0_IntHandler</a> from myuart.o(.text) referenced from myuart.o(.text)
+ <LI><a href="#[98]">UART0_IntHandler</a> from myuart.o(.text) referenced from myuart.o(.text)
  <LI><a href="#[10]">UART1_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[2b]">UART2_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[42]">UART3_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
@@ -257,8 +257,7 @@ Function Pointers
  <LI><a href="#[58]">WTIMER5B_Handler</a> from startup_tm4c123.o(.text) referenced from startup_tm4c123.o(RESET)
  <LI><a href="#[77]">_IntDefaultHandler</a> from interrupt.o(.text) referenced from interrupt.o(.text)
  <LI><a href="#[79]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_tm4c123.o(.text)
- <LI><a href="#[7b]">_snputc</a> from printfa.o(i._snputc) referenced from printfa.o(i.__0vsnprintf)
- <LI><a href="#[7a]">_sputc</a> from printfa.o(i._sputc) referenced from printfa.o(i.__0sprintf)
+ <LI><a href="#[7a]">_snputc</a> from printfa.o(i._snputc) referenced from printfa.o(i.__0vsnprintf)
  <LI><a href="#[76]">main</a> from main.o(.text) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
 <P>
@@ -268,836 +267,557 @@ Global Symbols
 <P><STRONG><a name="[79]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(.text)
 </UL>
-<P><STRONG><a name="[7c]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, entry5.o(.ARM.Collect$$$$00000004))
-<BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<P><STRONG><a name="[7b]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[11f]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, entry5.o(.ARM.Collect$$$$00000004))
-<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<P><STRONG><a name="[ed]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[fa]"></a>CPUcpsid</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
+<P><STRONG><a name="[ce]"></a>CPUcpsid</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterDisable
 </UL>
 
-<P><STRONG><a name="[f8]"></a>CPUcpsie</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text))
-<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<P><STRONG><a name="[cc]"></a>CPUcpsie</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, cpu.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
 </UL>
 
-<P><STRONG><a name="[105]"></a>CPUwfi</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDeepSleep
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlSleep
+<P><STRONG><a name="[d6]"></a>CPUwfi</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDeepSleep
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlSleep
 </UL>
 
-<P><STRONG><a name="[fc]"></a>CPUbasepriSet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntPriorityMaskSet
+<P><STRONG><a name="[d0]"></a>CPUbasepriSet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntPriorityMaskSet
 </UL>
 
-<P><STRONG><a name="[fe]"></a>CPUbasepriGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntPriorityMaskGet
+<P><STRONG><a name="[d2]"></a>CPUbasepriGet</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, cpu.o(.emb_text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntPriorityMaskGet
 </UL>
 
-<P><STRONG><a name="[7e]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
-<BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<P><STRONG><a name="[7d]"></a>SysCtlDelay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sysctl.o(.emb_text))
+<BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
 </UL>
 
-<P><STRONG><a name="[7f]"></a>BasicSystemInit</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FPULazyStackingEnable
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FPUEnable
+<P><STRONG><a name="[7e]"></a>BasicSystemInit</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockSet
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FPULazyStackingEnable
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FPUEnable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[85]"></a>UartPrintEvent</STRONG> (Thumb, 80 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowString
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[76]"></a>main</STRONG> (Thumb, 156 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowString
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Init
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key4
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key3
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key2
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key1
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_Get
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_Get
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartPrintEvent
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
+<P><STRONG><a name="[76]"></a>main</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_ms
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[94]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 184 bytes, Stack size 0 bytes, system_tm4c123.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getOscClk
+<P><STRONG><a name="[87]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 184 bytes, Stack size 0 bytes, system_tm4c123.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getOscClk
 </UL>
 
 <P><STRONG><a name="[78]"></a>SystemInit</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, system_tm4c123.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(.text)
 </UL>
-<P><STRONG><a name="[98]"></a>SysTickIntHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, system.o(.text))
+<P><STRONG><a name="[8b]"></a>SysTickIntHandler</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, system.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> system.o(.text)
 </UL>
-<P><STRONG><a name="[83]"></a>SysTickInit</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, system.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickPeriodSet
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntRegister
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntEnable
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickEnable
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<P><STRONG><a name="[82]"></a>SysTickInit</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, system.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickPeriodSet
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntRegister
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntEnable
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickEnable
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
-</UL>
-
-<P><STRONG><a name="[a0]"></a>GetSysTime_ms</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, system.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
 </UL>
 
-<P><STRONG><a name="[9d]"></a>GetSysTime_us</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, system.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickValueGet
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickPeriodGet
-</UL>
-<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_us
-</UL>
-
-<P><STRONG><a name="[93]"></a>Delay_ms</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, system.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_ms
-</UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key4
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key3
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key2
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key1
+<P><STRONG><a name="[84]"></a>GetSysTime_ms</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, system.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a1]"></a>Delay_us</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, system.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_us
+<P><STRONG><a name="[90]"></a>GetSysTime_us</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, system.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickValueGet
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickPeriodGet
+</UL>
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_us
 </UL>
 
-<P><STRONG><a name="[af]"></a>UARTStdioConfig</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, uartstdio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<P><STRONG><a name="[86]"></a>Delay_ms</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, system.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a3]"></a>UARTwrite</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, uartstdio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTvprintf
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
+<P><STRONG><a name="[93]"></a>Delay_us</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, system.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_us
 </UL>
 
-<P><STRONG><a name="[a2]"></a>UARTgets</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, uartstdio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
+<P><STRONG><a name="[a1]"></a>UARTStdioConfig</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, uartstdio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[a4]"></a>UARTvprintf</STRONG> (Thumb, 574 bytes, Stack size 0 bytes, uartstdio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
-</UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
-</UL>
-
-<P><STRONG><a name="[a5]"></a>UARTprintf</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uartstdio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTvprintf
+<P><STRONG><a name="[95]"></a>UARTwrite</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, uartstdio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTvprintf
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTgets
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
 </UL>
 
-<P><STRONG><a name="[a6]"></a>UART0_IntHandler</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, myuart.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntStatus
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntClear
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharsAvail
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPutNonBlocking
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharGetNonBlocking
+<P><STRONG><a name="[94]"></a>UARTgets</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, uartstdio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
+</UL>
+
+<P><STRONG><a name="[96]"></a>UARTvprintf</STRONG> (Thumb, 574 bytes, Stack size 0 bytes, uartstdio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
+</UL>
+<BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTprintf
+</UL>
+
+<P><STRONG><a name="[97]"></a>UARTprintf</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uartstdio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTvprintf
+</UL>
+
+<P><STRONG><a name="[98]"></a>UART0_IntHandler</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, myuart.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntStatus
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntClear
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharsAvail
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharPutNonBlocking
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTCharGetNonBlocking
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> myuart.o(.text)
 </UL>
-<P><STRONG><a name="[84]"></a>UART0Init</STRONG> (Thumb, 94 bytes, Stack size 0 bytes, myuart.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntEnable
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntPrioritySet
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinConfigure
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioConfig
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
+<P><STRONG><a name="[83]"></a>UART0Init</STRONG> (Thumb, 94 bytes, Stack size 0 bytes, myuart.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntEnable
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntPrioritySet
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinConfigure
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTStdioConfig
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntMasterEnable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
-</UL>
-
-<P><STRONG><a name="[8f]"></a>myPrintf</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, myuart.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vsnprintf
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
 </UL>
 
-<P><STRONG><a name="[bd]"></a>Lcd_SetRegion</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteIndex
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowImage
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowChar
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDClear
-</UL>
-
-<P><STRONG><a name="[be]"></a>LCDClear</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_SetRegion
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteData_16Bit
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowImage
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-</UL>
-
-<P><STRONG><a name="[8a]"></a>LCDInit</STRONG> (Thumb, 818 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDClear
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteIndex
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tft_delay
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIEnable
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIConfigSetExpClk
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinConfigure
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockGet
+<P><STRONG><a name="[85]"></a>myPrintf</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, myuart.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTwrite
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vsnprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c4]"></a>LCDShowChar</STRONG> (Thumb, 100 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_SetRegion
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteData_16Bit
+<P><STRONG><a name="[7f]"></a>FPUEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fpu.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
+</UL>
+
+<P><STRONG><a name="[80]"></a>FPULazyStackingEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fpu.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
+</UL>
+
+<P><STRONG><a name="[b2]"></a>GPIODirModeSet</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeLow
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeHigh
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBDigital
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBAnalog
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTrace
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTimer
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeQEI
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeOneWire
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeLCD
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2CSCL
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeHibernateRTCCLK
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutputOD
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetMII
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetLED
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEPI
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeDIVSCLK
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparatorOutput
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparator
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeADC
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2C
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_showuint16_t
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowInt16
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_showuint8_t
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowInt8
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowString
-</UL>
-
-<P><STRONG><a name="[88]"></a>LCDShowString</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowChar
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartPrintEvent
-</UL>
-
-<P><STRONG><a name="[c5]"></a>LCDShowInt8</STRONG> (Thumb, 146 bytes, Stack size 0 bytes, tft18.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowChar
-</UL>
-
-<P><STRONG><a name="[c6]"></a>lcd_showuint8_t</STRONG> (Thumb, 104 bytes, Stack size 0 bytes, tft18.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowChar
-</UL>
-
-<P><STRONG><a name="[c7]"></a>LCDShowInt16</STRONG> (Thumb, 192 bytes, Stack size 0 bytes, tft18.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowChar
-</UL>
-
-<P><STRONG><a name="[c8]"></a>lcd_showuint16_t</STRONG> (Thumb, 152 bytes, Stack size 0 bytes, tft18.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowChar
-</UL>
-
-<P><STRONG><a name="[c9]"></a>LCDShowImage</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, tft18.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDClear
-<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_SetRegion
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteData_16Bit
-</UL>
-
-<P><STRONG><a name="[89]"></a>ADC_Init</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, adc.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeADC
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceStepConfigure
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceEnable
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceConfigure
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralReady
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[8c]"></a>ADC0_Get</STRONG> (Thumb, 162 bytes, Stack size 0 bytes, adc.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceDataGet
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCProcessorTrigger
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntStatus
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntClear
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[8d]"></a>ADC1_Get</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, adc.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCSequenceDataGet
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCProcessorTrigger
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntStatus
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntClear
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[8b]"></a>Key_Init</STRONG> (Thumb, 148 bytes, Stack size 0 bytes, key.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralReady
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlPeripheralEnable
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[8e]"></a>Key1</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, key.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[90]"></a>Key2</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, key.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[91]"></a>Key3</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, key.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[92]"></a>Key4</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, key.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinRead
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_ms
-</UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
 
-<P><STRONG><a name="[d7]"></a>ADCIntRegister</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, adc_1.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ADCIntNumberGet
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
-</UL>
-
-<P><STRONG><a name="[da]"></a>ADCIntUnregister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, adc_1.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ADCIntNumberGet
-</UL>
-
-<P><STRONG><a name="[d1]"></a>ADCIntStatus</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, adc_1.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_Get
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_Get
-</UL>
-
-<P><STRONG><a name="[d2]"></a>ADCIntClear</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, adc_1.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_Get
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_Get
-</UL>
-
-<P><STRONG><a name="[ce]"></a>ADCSequenceEnable</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, adc_1.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<P><STRONG><a name="[b3]"></a>GPIOPadConfigSet</STRONG> (Thumb, 342 bytes, Stack size 0 bytes, gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeLow
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeHigh
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBDigital
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBAnalog
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTrace
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTimer
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeQEI
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeOneWire
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeLCD
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2CSCL
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeHibernateRTCCLK
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutputOD
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetMII
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetLED
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEPI
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeDIVSCLK
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparatorOutput
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparator
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeADC
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2C
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
 </UL>
 
-<P><STRONG><a name="[cc]"></a>ADCSequenceConfigure</STRONG> (Thumb, 78 bytes, Stack size 0 bytes, adc_1.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<P><STRONG><a name="[a9]"></a>GPIOIntRegister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
 </UL>
 
-<P><STRONG><a name="[cd]"></a>ADCSequenceStepConfigure</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, adc_1.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<P><STRONG><a name="[ac]"></a>GPIOIntUnregister</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
 </UL>
 
-<P><STRONG><a name="[d3]"></a>ADCSequenceDataGet</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, adc_1.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_Get
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_Get
+<P><STRONG><a name="[af]"></a>GPIOIntRegisterPin</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
 </UL>
 
-<P><STRONG><a name="[d0]"></a>ADCProcessorTrigger</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, adc_1.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_Get
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_Get
+<P><STRONG><a name="[b0]"></a>GPIOIntUnregisterPin</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
 </UL>
 
-<P><STRONG><a name="[80]"></a>FPUEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fpu.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
+<P><STRONG><a name="[b1]"></a>GPIOPinTypeADC</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[81]"></a>FPULazyStackingEnable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, fpu.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
+<P><STRONG><a name="[b4]"></a>GPIOPinTypeCAN</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[e2]"></a>GPIODirModeSet</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeLow
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeHigh
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBDigital
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBAnalog
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTrace
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTimer
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeQEI
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeOneWire
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeLCD
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2CSCL
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeHibernateRTCCLK
-<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutputOD
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetMII
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetLED
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEPI
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeDIVSCLK
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparatorOutput
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparator
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeADC
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
-<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2C
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
+<P><STRONG><a name="[b5]"></a>GPIOPinTypeComparator</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[d5]"></a>GPIOPadConfigSet</STRONG> (Thumb, 342 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeLow
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeWakeHigh
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBDigital
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUSBAnalog
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTrace
-<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeTimer
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeQEI
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeOneWire
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeLCD
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2CSCL
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeHibernateRTCCLK
-<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutputOD
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetMII
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEthernetLED
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeEPI
-<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeDIVSCLK
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparatorOutput
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeComparator
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeCAN
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOInput
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeADC
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeGPIOOutput
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeSSI
-<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeI2C
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypePWM
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinTypeUART
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Init
+<P><STRONG><a name="[b6]"></a>GPIOPinTypeComparatorOutput</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[dd]"></a>GPIOIntRegister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<P><STRONG><a name="[b7]"></a>GPIOPinTypeDIVSCLK</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[df]"></a>GPIOIntUnregister</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
+<P><STRONG><a name="[b8]"></a>GPIOPinTypeEPI</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[e0]"></a>GPIOIntRegisterPin</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<P><STRONG><a name="[b9]"></a>GPIOPinTypeEthernetLED</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[e1]"></a>GPIOIntUnregisterPin</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GPIOIntNumberGet
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
+<P><STRONG><a name="[ba]"></a>GPIOPinTypeEthernetMII</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[d6]"></a>GPIOPinRead</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key4
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key3
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key2
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key1
+<P><STRONG><a name="[bb]"></a>GPIOPinTypeGPIOInput</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[b8]"></a>GPIOPinWrite</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteData_16Bit
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteIndex
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<P><STRONG><a name="[bc]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[cb]"></a>GPIOPinTypeADC</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[bd]"></a>GPIOPinTypeGPIOOutputOD</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
-</UL>
-
-<P><STRONG><a name="[e3]"></a>GPIOPinTypeCAN</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[e4]"></a>GPIOPinTypeComparator</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[e5]"></a>GPIOPinTypeComparatorOutput</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[e6]"></a>GPIOPinTypeDIVSCLK</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[e7]"></a>GPIOPinTypeEPI</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[e8]"></a>GPIOPinTypeEthernetLED</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[e9]"></a>GPIOPinTypeEthernetMII</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[d4]"></a>GPIOPinTypeGPIOInput</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Init
-</UL>
-
-<P><STRONG><a name="[c2]"></a>GPIOPinTypeGPIOOutput</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-</UL>
-
-<P><STRONG><a name="[ea]"></a>GPIOPinTypeGPIOOutputOD</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[eb]"></a>GPIOPinTypeHibernateRTCCLK</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[ec]"></a>GPIOPinTypeI2C</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[ed]"></a>GPIOPinTypeI2CSCL</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[ee]"></a>GPIOPinTypeLCD</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
-
-<P><STRONG><a name="[ef]"></a>GPIOPinTypeOneWire</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
 
-<P><STRONG><a name="[f0]"></a>GPIOPinTypePWM</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[be]"></a>GPIOPinTypeHibernateRTCCLK</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[f1]"></a>GPIOPinTypeQEI</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[bf]"></a>GPIOPinTypeI2C</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[bf]"></a>GPIOPinTypeSSI</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[c0]"></a>GPIOPinTypeI2CSCL</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-</UL>
-
-<P><STRONG><a name="[f2]"></a>GPIOPinTypeTimer</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
-</UL>
 
-<P><STRONG><a name="[f3]"></a>GPIOPinTypeTrace</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[c1]"></a>GPIOPinTypeLCD</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[ae]"></a>GPIOPinTypeUART</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[c2]"></a>GPIOPinTypeOneWire</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
-</UL>
 
-<P><STRONG><a name="[f4]"></a>GPIOPinTypeUSBAnalog</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[c3]"></a>GPIOPinTypePWM</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[f5]"></a>GPIOPinTypeUSBDigital</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[c4]"></a>GPIOPinTypeQEI</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[f6]"></a>GPIOPinTypeWakeHigh</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[c5]"></a>GPIOPinTypeSSI</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[f7]"></a>GPIOPinTypeWakeLow</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
+<P><STRONG><a name="[c6]"></a>GPIOPinTypeTimer</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[ad]"></a>GPIOPinConfigure</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<P><STRONG><a name="[c7]"></a>GPIOPinTypeTrace</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[9a]"></a>IntMasterEnable</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, interrupt.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsie
+<P><STRONG><a name="[a0]"></a>GPIOPinTypeUART</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[f9]"></a>IntMasterDisable</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsid
+<P><STRONG><a name="[c8]"></a>GPIOPinTypeUSBAnalog</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[d9]"></a>IntRegister</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, interrupt.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntRegister
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIIntRegister
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegisterPin
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegister
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntRegister
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntRegister
+<P><STRONG><a name="[c9]"></a>GPIOPinTypeUSBDigital</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[dc]"></a>IntUnregister</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntUnregister
-<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntUnregister
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIIntUnregister
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregisterPin
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregister
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntUnregister
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntUnregister
+<P><STRONG><a name="[ca]"></a>GPIOPinTypeWakeHigh</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[b1]"></a>IntPrioritySet</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, interrupt.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<P><STRONG><a name="[cb]"></a>GPIOPinTypeWakeLow</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIODirModeSet
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPadConfigSet
 </UL>
 
-<P><STRONG><a name="[b2]"></a>IntEnable</STRONG> (Thumb, 120 bytes, Stack size 0 bytes, interrupt.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntRegister
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIIntRegister
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegisterPin
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegister
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntRegister
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<P><STRONG><a name="[9f]"></a>GPIOPinConfigure</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[db]"></a>IntDisable</STRONG> (Thumb, 120 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntUnregister
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIIntUnregister
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregisterPin
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregister
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntUnregister
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntUnregister
+<P><STRONG><a name="[8d]"></a>IntMasterEnable</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, interrupt.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsie
 </UL>
-
-<P><STRONG><a name="[fb]"></a>IntPriorityMaskSet</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUbasepriSet
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
 </UL>
 
-<P><STRONG><a name="[fd]"></a>IntPriorityMaskGet</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUbasepriGet
+<P><STRONG><a name="[cd]"></a>IntMasterDisable</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUcpsid
 </UL>
 
-<P><STRONG><a name="[c0]"></a>SSIConfigSetExpClk</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, ssi.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<P><STRONG><a name="[ab]"></a>IntRegister</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, interrupt.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntRegister
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegisterPin
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegister
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntRegister
 </UL>
 
-<P><STRONG><a name="[c1]"></a>SSIEnable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ssi.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<P><STRONG><a name="[ae]"></a>IntUnregister</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickIntUnregister
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntUnregister
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregisterPin
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregister
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntUnregister
 </UL>
 
-<P><STRONG><a name="[ff]"></a>SSIIntRegister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, ssi.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SSIIntNumberGet
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<P><STRONG><a name="[a3]"></a>IntPrioritySet</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, interrupt.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[101]"></a>SSIIntUnregister</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, ssi.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SSIIntNumberGet
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
+<P><STRONG><a name="[a4]"></a>IntEnable</STRONG> (Thumb, 120 bytes, Stack size 0 bytes, interrupt.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntRegister
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegisterPin
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegister
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[b9]"></a>SSIDataPut</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, ssi.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteData_16Bit
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteIndex
+<P><STRONG><a name="[ad]"></a>IntDisable</STRONG> (Thumb, 120 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlIntUnregister
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregisterPin
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregister
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntUnregister
 </UL>
 
-<P><STRONG><a name="[ba]"></a>SSIBusy</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, ssi.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteData_16Bit
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteData
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_WriteIndex
+<P><STRONG><a name="[cf]"></a>IntPriorityMaskSet</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUbasepriSet
 </UL>
 
-<P><STRONG><a name="[ca]"></a>SysCtlPeripheralReady</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, sysctl.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<P><STRONG><a name="[d1]"></a>IntPriorityMaskGet</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, interrupt.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUbasepriGet
 </UL>
 
-<P><STRONG><a name="[ac]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, sysctl.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<P><STRONG><a name="[9e]"></a>SysCtlPeripheralEnable</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, sysctl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[102]"></a>SysCtlIntRegister</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<P><STRONG><a name="[d3]"></a>SysCtlIntRegister</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
 </UL>
 
-<P><STRONG><a name="[103]"></a>SysCtlIntUnregister</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
+<P><STRONG><a name="[d4]"></a>SysCtlIntUnregister</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
 </UL>
 
-<P><STRONG><a name="[104]"></a>SysCtlSleep</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUwfi
+<P><STRONG><a name="[d5]"></a>SysCtlSleep</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUwfi
 </UL>
 
-<P><STRONG><a name="[106]"></a>SysCtlDeepSleep</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUwfi
+<P><STRONG><a name="[d7]"></a>SysCtlDeepSleep</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CPUwfi
 </UL>
 
-<P><STRONG><a name="[107]"></a>SysCtlClockFreqSet</STRONG> (Thumb, 666 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SysCtlFrequencyGet
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SysCtlMemTimingGet
+<P><STRONG><a name="[d8]"></a>SysCtlClockFreqSet</STRONG> (Thumb, 666 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SysCtlFrequencyGet
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_SysCtlMemTimingGet
 </UL>
 
-<P><STRONG><a name="[82]"></a>SysCtlClockSet</STRONG> (Thumb, 342 bytes, Stack size 0 bytes, sysctl.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
+<P><STRONG><a name="[81]"></a>SysCtlClockSet</STRONG> (Thumb, 342 bytes, Stack size 0 bytes, sysctl.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlDelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BasicSystemInit
 </UL>
 
-<P><STRONG><a name="[96]"></a>SysCtlClockGet</STRONG> (Thumb, 326 bytes, Stack size 0 bytes, sysctl.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
+<P><STRONG><a name="[89]"></a>SysCtlClockGet</STRONG> (Thumb, 326 bytes, Stack size 0 bytes, sysctl.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
 </UL>
 
-<P><STRONG><a name="[9c]"></a>SysTickEnable</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, systick.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
+<P><STRONG><a name="[8f]"></a>SysTickEnable</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, systick.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
 </UL>
 
-<P><STRONG><a name="[99]"></a>SysTickIntRegister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, systick.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
+<P><STRONG><a name="[8c]"></a>SysTickIntRegister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, systick.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
+<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
 </UL>
 
-<P><STRONG><a name="[10a]"></a>SysTickIntUnregister</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, systick.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
+<P><STRONG><a name="[db]"></a>SysTickIntUnregister</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, systick.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
 </UL>
 
-<P><STRONG><a name="[9b]"></a>SysTickIntEnable</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, systick.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
+<P><STRONG><a name="[8e]"></a>SysTickIntEnable</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, systick.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
 </UL>
 
-<P><STRONG><a name="[97]"></a>SysTickPeriodSet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, systick.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
+<P><STRONG><a name="[8a]"></a>SysTickPeriodSet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, systick.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTickInit
 </UL>
 
-<P><STRONG><a name="[9f]"></a>SysTickPeriodGet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, systick.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_us
+<P><STRONG><a name="[92]"></a>SysTickPeriodGet</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, systick.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_us
 </UL>
 
-<P><STRONG><a name="[9e]"></a>SysTickValueGet</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, systick.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_us
+<P><STRONG><a name="[91]"></a>SysTickValueGet</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, systick.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysTime_us
 </UL>
 
-<P><STRONG><a name="[10d]"></a>UARTEnable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+<P><STRONG><a name="[de]"></a>UARTEnable</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
 </UL>
 
-<P><STRONG><a name="[10c]"></a>UARTDisable</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
+<P><STRONG><a name="[dd]"></a>UARTDisable</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTConfigSetExpClk
 </UL>
 
-<P><STRONG><a name="[10b]"></a>UARTConfigSetExpClk</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDisable
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTEnable
+<P><STRONG><a name="[dc]"></a>UARTConfigSetExpClk</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTDisable
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTEnable
 </UL>
 
-<P><STRONG><a name="[ab]"></a>UARTCharsAvail</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
+<P><STRONG><a name="[9d]"></a>UARTCharsAvail</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
 </UL>
 
-<P><STRONG><a name="[a9]"></a>UARTCharGetNonBlocking</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
+<P><STRONG><a name="[9b]"></a>UARTCharGetNonBlocking</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
 </UL>
 
-<P><STRONG><a name="[aa]"></a>UARTCharPutNonBlocking</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
+<P><STRONG><a name="[9c]"></a>UARTCharPutNonBlocking</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
 </UL>
 
-<P><STRONG><a name="[b0]"></a>UARTIntRegister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_UARTIntNumberGet
+<P><STRONG><a name="[a2]"></a>UARTIntRegister</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntRegister
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntEnable
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_UARTIntNumberGet
 </UL>
-<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[10f]"></a>UARTIntUnregister</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_UARTIntNumberGet
+<P><STRONG><a name="[e0]"></a>UARTIntUnregister</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, uart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntUnregister
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisable
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_UARTIntNumberGet
 </UL>
 
-<P><STRONG><a name="[b3]"></a>UARTIntEnable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
+<P><STRONG><a name="[a5]"></a>UARTIntEnable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0Init
 </UL>
 
-<P><STRONG><a name="[a7]"></a>UARTIntStatus</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
+<P><STRONG><a name="[99]"></a>UARTIntStatus</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
 </UL>
 
-<P><STRONG><a name="[a8]"></a>UARTIntClear</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
+<P><STRONG><a name="[9a]"></a>UARTIntClear</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_IntHandler
 </UL>
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_tm4c123.o(.text))
@@ -1922,253 +1642,175 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tm4c123.o(RESET)
 </UL>
-<P><STRONG><a name="[111]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<P><STRONG><a name="[e1]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 0 bytes, dmul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[110]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+<P><STRONG><a name="[f4]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[cf]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC0_Get
+<P><STRONG><a name="[e3]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, uldiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[112]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
+<P><STRONG><a name="[e4]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
-<P><STRONG><a name="[113]"></a>__aeabi_dmul</STRONG> (Thumb, 228 bytes, Stack size 0 bytes, dmul.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-</UL>
-<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-
-<P><STRONG><a name="[86]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartPrintEvent
+<P><STRONG><a name="[e6]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[127]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, uidiv.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[e2]"></a>_double_epilogue</STRONG> (Thumb, 156 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[115]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, uldiv.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<P><STRONG><a name="[e7]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-
-<P><STRONG><a name="[116]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[118]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[e9]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[114]"></a>_double_epilogue</STRONG> (Thumb, 156 bytes, Stack size 0 bytes, depilogue.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
-</UL>
-<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[ea]"></a>__aeabi_drsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[119]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lasr
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<P><STRONG><a name="[eb]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 0 bytes, ddiv.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
-<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[11b]"></a>__aeabi_dsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[ec]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[11c]"></a>__aeabi_drsub</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, dadd.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[f1]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
-<P><STRONG><a name="[11d]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 0 bytes, ddiv.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
+<P><STRONG><a name="[7c]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
 </UL>
-<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-
-<P><STRONG><a name="[11e]"></a>__aeabi_d2ulz</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, dfixul.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
-</UL>
-<BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[124]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, cdrcmple.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
+<P><STRONG><a name="[e5]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
 </UL>
 
-<P><STRONG><a name="[7d]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+<P><STRONG><a name="[e8]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 
-<P><STRONG><a name="[117]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<P><STRONG><a name="[ee]"></a>__0vsnprintf</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, printfa.o(i.__0vsnprintf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[11a]"></a>__aeabi_lasr</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, llsshr.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<P><STRONG><a name="[a6]"></a>vsnprintf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfa.o(i.__0vsnprintf))
+<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
 </UL>
 
-<P><STRONG><a name="[120]"></a>__0sprintf</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, printfa.o(i.__0sprintf), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[a8]"></a>free</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, malloc.o(i.free))
+<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
 </UL>
 
-<P><STRONG><a name="[87]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfa.o(i.__0sprintf))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartPrintEvent
-</UL>
-
-<P><STRONG><a name="[122]"></a>__0vsnprintf</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, printfa.o(i.__0vsnprintf), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
-</UL>
-
-<P><STRONG><a name="[b4]"></a>vsnprintf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, printfa.o(i.__0vsnprintf))
-<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
-</UL>
-
-<P><STRONG><a name="[b6]"></a>free</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, malloc.o(i.free))
-<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
-</UL>
-
-<P><STRONG><a name="[b5]"></a>malloc</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, malloc.o(i.malloc))
-<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
+<P><STRONG><a name="[a7]"></a>malloc</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, malloc.o(i.malloc))
+<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myPrintf
 </UL>
 <P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[95]"></a>getOscClk</STRONG> (Thumb, 182 bytes, Stack size 0 bytes, system_tm4c123.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
+<P><STRONG><a name="[88]"></a>getOscClk</STRONG> (Thumb, 182 bytes, Stack size 0 bytes, system_tm4c123.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCoreClockUpdate
 </UL>
 
-<P><STRONG><a name="[c3]"></a>tft_delay</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-</UL>
-
-<P><STRONG><a name="[b7]"></a>Lcd_WriteIndex</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIBusy
-</UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_SetRegion
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-</UL>
-
-<P><STRONG><a name="[bb]"></a>Lcd_WriteData</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIBusy
-</UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Lcd_SetRegion
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDInit
-</UL>
-
-<P><STRONG><a name="[bc]"></a>LCD_WriteData_16Bit</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, tft18.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOPinWrite
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIDataPut
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIBusy
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowImage
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDShowChar
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCDClear
-</UL>
-
-<P><STRONG><a name="[d8]"></a>_ADCIntNumberGet</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, adc_1.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntUnregister
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADCIntRegister
-</UL>
-
-<P><STRONG><a name="[de]"></a>_GPIOIntNumberGet</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregisterPin
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegisterPin
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregister
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegister
+<P><STRONG><a name="[aa]"></a>_GPIOIntNumberGet</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, gpio.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregisterPin
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegisterPin
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntUnregister
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOIntRegister
 </UL>
 
 <P><STRONG><a name="[77]"></a>_IntDefaultHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, interrupt.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> interrupt.o(.text)
 </UL>
-<P><STRONG><a name="[100]"></a>_SSIIntNumberGet</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, ssi.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIIntUnregister
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SSIIntRegister
+<P><STRONG><a name="[d9]"></a>_SysCtlMemTimingGet</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockFreqSet
 </UL>
 
-<P><STRONG><a name="[108]"></a>_SysCtlMemTimingGet</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockFreqSet
+<P><STRONG><a name="[da]"></a>_SysCtlFrequencyGet</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockFreqSet
 </UL>
 
-<P><STRONG><a name="[109]"></a>_SysCtlFrequencyGet</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, sysctl.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysCtlClockFreqSet
+<P><STRONG><a name="[df]"></a>_UARTIntNumberGet</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, uart.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntUnregister
 </UL>
 
-<P><STRONG><a name="[10e]"></a>_UARTIntNumberGet</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, uart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntRegister
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UARTIntUnregister
+<P><STRONG><a name="[f0]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 0 bytes, printfa.o(i._fp_digits), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
+<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[123]"></a>_fp_digits</STRONG> (Thumb, 366 bytes, Stack size 0 bytes, printfa.o(i._fp_digits), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2ulz
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<P><STRONG><a name="[ef]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 0 bytes, printfa.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
-<BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
-</UL>
-
-<P><STRONG><a name="[121]"></a>_printf_core</STRONG> (Thumb, 1744 bytes, Stack size 0 bytes, printfa.o(i._printf_core), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-</UL>
-<BR>[Called By]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0vsnprintf
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf
+<BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0vsnprintf
 </UL>
 
-<P><STRONG><a name="[126]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, printfa.o(i._printf_post_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[f3]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, printfa.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[125]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, printfa.o(i._printf_pre_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[f2]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, printfa.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[7b]"></a>_snputc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, printfa.o(i._snputc))
+<P><STRONG><a name="[7a]"></a>_snputc</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, printfa.o(i._snputc))
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0vsnprintf)
-</UL>
-<P><STRONG><a name="[7a]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, printfa.o(i._sputc))
-<BR><BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0sprintf)
 </UL><P>
 <H3>
 Undefined Global Symbols
