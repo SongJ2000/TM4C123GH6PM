@@ -1,0 +1,12 @@
+.\objects\onewire.o: ..\Library\driverlib\onewire.c
+.\objects\onewire.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\onewire.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\onewire.o: ..\Library\inc/hw_ints.h
+.\objects\onewire.o: ..\Library\inc/hw_memmap.h
+.\objects\onewire.o: ..\Library\inc/hw_onewire.h
+.\objects\onewire.o: ..\Library\inc/hw_sysctl.h
+.\objects\onewire.o: ..\Library\inc/hw_types.h
+.\objects\onewire.o: ..\Library\driverlib/debug.h
+.\objects\onewire.o: ..\Library\driverlib/interrupt.h
+.\objects\onewire.o: ..\Library\driverlib/onewire.h
+.\objects\onewire.o: ..\Library\driverlib/sysctl.h

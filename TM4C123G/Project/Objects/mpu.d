@@ -1,0 +1,9 @@
+.\objects\mpu.o: ..\Library\driverlib\mpu.c
+.\objects\mpu.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\mpu.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mpu.o: ..\Library\inc/hw_ints.h
+.\objects\mpu.o: ..\Library\inc/hw_nvic.h
+.\objects\mpu.o: ..\Library\inc/hw_types.h
+.\objects\mpu.o: ..\Library\driverlib/debug.h
+.\objects\mpu.o: ..\Library\driverlib/interrupt.h
+.\objects\mpu.o: ..\Library\driverlib/mpu.h

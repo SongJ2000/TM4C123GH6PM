@@ -1,0 +1,11 @@
+.\objects\adc_1.o: ..\Library\driverlib\adc.c
+.\objects\adc_1.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\adc_1.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\adc_1.o: ..\Library\inc/hw_adc.h
+.\objects\adc_1.o: ..\Library\inc/hw_ints.h
+.\objects\adc_1.o: ..\Library\inc/hw_memmap.h
+.\objects\adc_1.o: ..\Library\inc/hw_types.h
+.\objects\adc_1.o: ..\Library\inc/hw_sysctl.h
+.\objects\adc_1.o: ..\Library\driverlib/adc.h
+.\objects\adc_1.o: ..\Library\driverlib/debug.h
+.\objects\adc_1.o: ..\Library\driverlib/interrupt.h

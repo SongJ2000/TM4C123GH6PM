@@ -1,0 +1,12 @@
+.\objects\emac.o: ..\Library\driverlib\emac.c
+.\objects\emac.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\emac.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\emac.o: ..\Library\inc/hw_ints.h
+.\objects\emac.o: ..\Library\inc/hw_memmap.h
+.\objects\emac.o: ..\Library\inc/hw_types.h
+.\objects\emac.o: ..\Library\inc/hw_emac.h
+.\objects\emac.o: ..\Library\driverlib/debug.h
+.\objects\emac.o: ..\Library\driverlib/emac.h
+.\objects\emac.o: ..\Library\driverlib/sysctl.h
+.\objects\emac.o: ..\Library\driverlib/interrupt.h
+.\objects\emac.o: ..\Library\driverlib/sw_crc.h
