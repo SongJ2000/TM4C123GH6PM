@@ -1,13 +1,8 @@
-.\objects\usb.o: ..\Library\driverlib\usb.c
-.\objects\usb.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\usb.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\usb.o: ..\Library\inc/hw_ints.h
-.\objects\usb.o: ..\Library\inc/hw_memmap.h
-.\objects\usb.o: ..\Library\inc/hw_types.h
-.\objects\usb.o: ..\Library\inc/hw_sysctl.h
-.\objects\usb.o: ..\Library\inc/hw_usb.h
-.\objects\usb.o: ..\Library\driverlib/debug.h
-.\objects\usb.o: ..\Library\driverlib/interrupt.h
-.\objects\usb.o: ..\Library\driverlib/sysctl.h
-.\objects\usb.o: ..\Library\driverlib/udma.h
-.\objects\usb.o: ..\Library\driverlib/usb.h
+./objects/usb.o: ..\Library\driverlib\usb.c \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\Library\inc\hw_ints.h ..\Library\inc\hw_memmap.h \
+  ..\Library\inc\hw_types.h ..\Library\inc\hw_sysctl.h \
+  ..\Library\inc\hw_usb.h ..\Library\driverlib\debug.h \
+  ..\Library\driverlib\interrupt.h ..\Library\driverlib\sysctl.h \
+  ..\Library\driverlib\udma.h ..\Library\driverlib\usb.h

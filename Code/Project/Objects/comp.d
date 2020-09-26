@@ -1,10 +1,7 @@
-.\objects\comp.o: ..\Library\driverlib\comp.c
-.\objects\comp.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\comp.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\comp.o: ..\Library\inc/hw_comp.h
-.\objects\comp.o: ..\Library\inc/hw_ints.h
-.\objects\comp.o: ..\Library\inc/hw_memmap.h
-.\objects\comp.o: ..\Library\inc/hw_types.h
-.\objects\comp.o: ..\Library\driverlib/comp.h
-.\objects\comp.o: ..\Library\driverlib/debug.h
-.\objects\comp.o: ..\Library\driverlib/interrupt.h
+./objects/comp.o: ..\Library\driverlib\comp.c \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\Library\inc\hw_comp.h ..\Library\inc\hw_ints.h \
+  ..\Library\inc\hw_memmap.h ..\Library\inc\hw_types.h \
+  ..\Library\driverlib\comp.h ..\Library\driverlib\debug.h \
+  ..\Library\driverlib\interrupt.h

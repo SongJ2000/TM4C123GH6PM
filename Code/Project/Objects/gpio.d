@@ -1,11 +1,7 @@
-.\objects\gpio.o: ..\Library\driverlib\gpio.c
-.\objects\gpio.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\gpio.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\gpio.o: ..\Library\inc/hw_gpio.h
-.\objects\gpio.o: ..\Library\inc/hw_ints.h
-.\objects\gpio.o: ..\Library\inc/hw_memmap.h
-.\objects\gpio.o: ..\Library\inc/hw_sysctl.h
-.\objects\gpio.o: ..\Library\inc/hw_types.h
-.\objects\gpio.o: ..\Library\driverlib/debug.h
-.\objects\gpio.o: ..\Library\driverlib/gpio.h
-.\objects\gpio.o: ..\Library\driverlib/interrupt.h
+./objects/gpio.o: ..\Library\driverlib\gpio.c \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\Library\inc\hw_gpio.h ..\Library\inc\hw_ints.h \
+  ..\Library\inc\hw_memmap.h ..\Library\inc\hw_sysctl.h \
+  ..\Library\inc\hw_types.h ..\Library\driverlib\debug.h \
+  ..\Library\driverlib\gpio.h ..\Library\driverlib\interrupt.h

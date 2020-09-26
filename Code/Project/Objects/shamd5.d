@@ -1,11 +1,7 @@
-.\objects\shamd5.o: ..\Library\driverlib\shamd5.c
-.\objects\shamd5.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\shamd5.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\shamd5.o: ..\Library\inc/hw_ints.h
-.\objects\shamd5.o: ..\Library\inc/hw_memmap.h
-.\objects\shamd5.o: ..\Library\inc/hw_nvic.h
-.\objects\shamd5.o: ..\Library\inc/hw_shamd5.h
-.\objects\shamd5.o: ..\Library\inc/hw_types.h
-.\objects\shamd5.o: ..\Library\driverlib/debug.h
-.\objects\shamd5.o: ..\Library\driverlib/interrupt.h
-.\objects\shamd5.o: ..\Library\driverlib/shamd5.h
+./objects/shamd5.o: ..\Library\driverlib\shamd5.c \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\Library\inc\hw_ints.h ..\Library\inc\hw_memmap.h \
+  ..\Library\inc\hw_nvic.h ..\Library\inc\hw_shamd5.h \
+  ..\Library\inc\hw_types.h ..\Library\driverlib\debug.h \
+  ..\Library\driverlib\interrupt.h ..\Library\driverlib\shamd5.h

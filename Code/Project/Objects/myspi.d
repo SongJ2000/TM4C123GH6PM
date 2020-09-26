@@ -1,36 +1,19 @@
-.\objects\myspi.o: ..\Hardware\SPI\mySPI.c
-.\objects\myspi.o: ..\Hardware\SPI/mySPI.h
-.\objects\myspi.o: ..\System\system.h
-.\objects\myspi.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\myspi.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\myspi.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\myspi.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\myspi.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\myspi.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\string.h
-.\objects\myspi.o: ..\Library\driverlib/adc.h
-.\objects\myspi.o: ..\Library\driverlib/fpu.h
-.\objects\myspi.o: ..\Library\driverlib/gpio.h
-.\objects\myspi.o: ..\Library\driverlib/i2c.h
-.\objects\myspi.o: ..\Library\driverlib/interrupt.h
-.\objects\myspi.o: ..\Library\driverlib/pin_map.h
-.\objects\myspi.o: ..\Library\driverlib/pwm.h
-.\objects\myspi.o: ..\Library\driverlib/ssi.h
-.\objects\myspi.o: ..\Library\driverlib/sysctl.h
-.\objects\myspi.o: ..\Library\driverlib/systick.h
-.\objects\myspi.o: ..\Library\driverlib/uart.h
-.\objects\myspi.o: ..\Library\inc/hw_gpio.h
-.\objects\myspi.o: ..\Library\inc/hw_memmap.h
-.\objects\myspi.o: ..\Library\inc/hw_types.h
-.\objects\myspi.o: ..\Library\inc/tm4c123gh6pm.h
-.\objects\myspi.o: ..\Library\utils/uartstdio.h
-.\objects\myspi.o: ..\Hardware\ADC/ADC.h
-.\objects\myspi.o: ..\System\system.h
-.\objects\myspi.o: ..\Hardware\CHIP/DAC081S101/DAC081S101.h
-.\objects\myspi.o: ..\Hardware\CHIP/DAC7811/DAC7811.h
-.\objects\myspi.o: ..\Hardware\IIC/myIIC.h
-.\objects\myspi.o: ..\Hardware\KEY/KEY.h
-.\objects\myspi.o: ..\Hardware\OLED/oled.h
-.\objects\myspi.o: ..\Hardware\PWM/myPWM.h
-.\objects\myspi.o: ..\Hardware\SPI/mySPI.h
-.\objects\myspi.o: ..\Hardware\TFT/TFT18.h
-.\objects\myspi.o: ..\Hardware\UART/myUART.h
+./objects/myspi.o: ..\Hardware\SPI\mySPI.c ..\Hardware\SPI\mySPI.h \
+  ..\System\system.h D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\string.h \
+  ..\Library\driverlib\adc.h ..\Library\driverlib\fpu.h \
+  ..\Library\driverlib\gpio.h ..\Library\driverlib\i2c.h \
+  ..\Library\driverlib\interrupt.h ..\Library\driverlib\pin_map.h \
+  ..\Library\driverlib\pwm.h ..\Library\driverlib\ssi.h \
+  ..\Library\driverlib\sysctl.h ..\Library\driverlib\systick.h \
+  ..\Library\driverlib\uart.h ..\Library\inc\hw_gpio.h \
+  ..\Library\inc\hw_memmap.h ..\Library\inc\hw_types.h \
+  ..\Library\inc\tm4c123gh6pm.h ..\Library\utils\uartstdio.h \
+  ..\Hardware\ADC\ADC.h ..\Hardware\CHIP\DAC081S101\DAC081S101.h \
+  ..\Hardware\CHIP\DAC7811\DAC7811.h ..\Hardware\IIC\myIIC.h \
+  ..\Hardware\KEY\KEY.h ..\Hardware\OLED\oled.h ..\Hardware\PWM\myPWM.h \
+  ..\Hardware\TFT\TFT18.h ..\Hardware\UART\myUART.h

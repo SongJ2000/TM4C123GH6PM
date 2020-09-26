@@ -1,36 +1,20 @@
-.\objects\dac081s101.o: ..\Hardware\CHIP\DAC081S101\DAC081S101.c
-.\objects\dac081s101.o: ..\Hardware\CHIP/DAC081S101/DAC081S101.h
-.\objects\dac081s101.o: ..\System\system.h
-.\objects\dac081s101.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\dac081s101.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\dac081s101.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\dac081s101.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\dac081s101.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\dac081s101.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\string.h
-.\objects\dac081s101.o: ..\Library\driverlib/adc.h
-.\objects\dac081s101.o: ..\Library\driverlib/fpu.h
-.\objects\dac081s101.o: ..\Library\driverlib/gpio.h
-.\objects\dac081s101.o: ..\Library\driverlib/i2c.h
-.\objects\dac081s101.o: ..\Library\driverlib/interrupt.h
-.\objects\dac081s101.o: ..\Library\driverlib/pin_map.h
-.\objects\dac081s101.o: ..\Library\driverlib/pwm.h
-.\objects\dac081s101.o: ..\Library\driverlib/ssi.h
-.\objects\dac081s101.o: ..\Library\driverlib/sysctl.h
-.\objects\dac081s101.o: ..\Library\driverlib/systick.h
-.\objects\dac081s101.o: ..\Library\driverlib/uart.h
-.\objects\dac081s101.o: ..\Library\inc/hw_gpio.h
-.\objects\dac081s101.o: ..\Library\inc/hw_memmap.h
-.\objects\dac081s101.o: ..\Library\inc/hw_types.h
-.\objects\dac081s101.o: ..\Library\inc/tm4c123gh6pm.h
-.\objects\dac081s101.o: ..\Library\utils/uartstdio.h
-.\objects\dac081s101.o: ..\Hardware\ADC/ADC.h
-.\objects\dac081s101.o: ..\System\system.h
-.\objects\dac081s101.o: ..\Hardware\CHIP/DAC081S101/DAC081S101.h
-.\objects\dac081s101.o: ..\Hardware\CHIP/DAC7811/DAC7811.h
-.\objects\dac081s101.o: ..\Hardware\IIC/myIIC.h
-.\objects\dac081s101.o: ..\Hardware\KEY/KEY.h
-.\objects\dac081s101.o: ..\Hardware\OLED/oled.h
-.\objects\dac081s101.o: ..\Hardware\PWM/myPWM.h
-.\objects\dac081s101.o: ..\Hardware\SPI/mySPI.h
-.\objects\dac081s101.o: ..\Hardware\TFT/TFT18.h
-.\objects\dac081s101.o: ..\Hardware\UART/myUART.h
+./objects/dac081s101.o: ..\Hardware\CHIP\DAC081S101\DAC081S101.c \
+  ..\Hardware\CHIP\DAC081S101\DAC081S101.h ..\System\system.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\string.h \
+  ..\Library\driverlib\adc.h ..\Library\driverlib\fpu.h \
+  ..\Library\driverlib\gpio.h ..\Library\driverlib\i2c.h \
+  ..\Library\driverlib\interrupt.h ..\Library\driverlib\pin_map.h \
+  ..\Library\driverlib\pwm.h ..\Library\driverlib\ssi.h \
+  ..\Library\driverlib\sysctl.h ..\Library\driverlib\systick.h \
+  ..\Library\driverlib\uart.h ..\Library\inc\hw_gpio.h \
+  ..\Library\inc\hw_memmap.h ..\Library\inc\hw_types.h \
+  ..\Library\inc\tm4c123gh6pm.h ..\Library\utils\uartstdio.h \
+  ..\Hardware\ADC\ADC.h ..\Hardware\CHIP\DAC7811\DAC7811.h \
+  ..\Hardware\IIC\myIIC.h ..\Hardware\KEY\KEY.h ..\Hardware\OLED\oled.h \
+  ..\Hardware\PWM\myPWM.h ..\Hardware\SPI\mySPI.h \
+  ..\Hardware\TFT\TFT18.h ..\Hardware\UART\myUART.h

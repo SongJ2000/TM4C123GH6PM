@@ -1844,6 +1844,15 @@ SysCtlDelay(uint32_t ui32Count)
 }
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION > 6
+void
+SysCtlDelay(uint32_t ui32Count)
+{
+		__asm("subs    r0, #1");
+    __asm("bne     SysCtlDelay");
+    __asm("bx      lr");
+}
+#else
 __asm void
 SysCtlDelay(uint32_t ui32Count)
 {
@@ -1851,6 +1860,7 @@ SysCtlDelay(uint32_t ui32Count)
     bne     SysCtlDelay;
     bx      lr;
 }
+#endif
 #endif
 //
 // For CCS implement this function in pure assembly.  This prevents the TI

@@ -89,6 +89,18 @@ uint32_t CPUcpsid(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION > 6
+uint32_t
+CPUcpsid(void)
+{
+    //
+    // Read PRIMASK and disable interrupts.
+    //
+    __asm("mrs     r0, PRIMASK");
+    __asm("cpsid   i");
+    __asm("bx      lr");
+}
+#else
 __asm uint32_t
  CPUcpsid(void)
 {
@@ -99,6 +111,7 @@ __asm uint32_t
     cpsid   i;
     bx      lr
 }
+#endif
 #endif
 #if defined(ccs)
 uint32_t CPUcpsid(void) {
@@ -165,6 +178,17 @@ uint32_t CPUprimask(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION > 6
+uint32_t
+CPUprimask(void)
+{
+    //
+    // Read PRIMASK and disable interrupts.
+    //
+    __asm("mrs     r0, PRIMASK");
+    __asm("bx      lr");
+}
+#else
 __asm uint32_t
  CPUprimask(void)
 {
@@ -174,6 +198,7 @@ __asm uint32_t
     mrs     r0, PRIMASK;
     bx      lr
 }
+#endif
 #endif
 #if defined(ccs)
 uint32_t CPUprimask(void) {
@@ -242,6 +267,18 @@ uint32_t CPUcpsie(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION > 6
+uint32_t
+CPUcpsie(void)
+{
+    //
+    // Read PRIMASK and enable interrupts.
+    //
+    __asm("mrs     r0, PRIMASK");
+    __asm("cpsie   i");
+    __asm("bx      lr");
+}
+#else
 __asm uint32_t
  CPUcpsie(void)
 {
@@ -252,6 +289,7 @@ __asm uint32_t
     cpsie   i;
     bx      lr
 }
+#endif
 #endif
 #if defined(ccs)
 uint32_t CPUcpsie(void) {
@@ -298,6 +336,17 @@ void CPUwfi(void) {
 }
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION > 6
+void
+CPUwfi(void)
+{
+    //
+    // Wait for the next interrupt.
+    //
+		__asm("wfi");
+    __asm("bx      lr");
+}
+#else
 __asm void
  CPUwfi(void)
 {
@@ -307,6 +356,7 @@ __asm void
     wfi;
     bx      lr
 }
+#endif
 #endif
 #if defined(ccs)
 void CPUwfi(void) {
@@ -341,6 +391,17 @@ void CPUbasepriSet(uint32_t ui32NewBasepri) {
 }
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION > 6
+void
+CPUbasepriSet(uint32_t ui32NewBasepri)
+{
+    //
+    // Set the BASEPRI register
+    //
+    __asm("msr     BASEPRI, r0");
+    __asm("bx      lr");
+}
+#else
 __asm void
  CPUbasepriSet(uint32_t ui32NewBasepri)
 {
@@ -350,6 +411,7 @@ __asm void
     msr     BASEPRI, r0;
     bx      lr
 }
+#endif
 #endif
 #if defined(ccs)
 void CPUbasepriSet(uint32_t ui32NewBasepri) {
@@ -403,6 +465,17 @@ uint32_t CPUbasepriGet(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION > 6
+uint32_t
+CPUbasepriGet(void)
+{
+    //
+    // Read BASEPRI
+    //
+    __asm("mrs     r0, BASEPRI");
+    __asm("bx      lr");
+}
+#else
 __asm uint32_t
  CPUbasepriGet(void)
 {
@@ -412,6 +485,7 @@ __asm uint32_t
     mrs     r0, BASEPRI;
     bx      lr
 }
+#endif
 #endif
 #if defined(ccs)
 uint32_t CPUbasepriGet(void) {

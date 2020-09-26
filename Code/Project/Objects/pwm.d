@@ -1,11 +1,7 @@
-.\objects\pwm.o: ..\Library\driverlib\pwm.c
-.\objects\pwm.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\pwm.o: D:\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\pwm.o: ..\Library\inc/hw_ints.h
-.\objects\pwm.o: ..\Library\inc/hw_memmap.h
-.\objects\pwm.o: ..\Library\inc/hw_pwm.h
-.\objects\pwm.o: ..\Library\inc/hw_sysctl.h
-.\objects\pwm.o: ..\Library\inc/hw_types.h
-.\objects\pwm.o: ..\Library\driverlib/debug.h
-.\objects\pwm.o: ..\Library\driverlib/interrupt.h
-.\objects\pwm.o: ..\Library\driverlib/pwm.h
+./objects/pwm.o: ..\Library\driverlib\pwm.c \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  ..\Library\inc\hw_ints.h ..\Library\inc\hw_memmap.h \
+  ..\Library\inc\hw_pwm.h ..\Library\inc\hw_sysctl.h \
+  ..\Library\inc\hw_types.h ..\Library\driverlib\debug.h \
+  ..\Library\driverlib\interrupt.h ..\Library\driverlib\pwm.h
