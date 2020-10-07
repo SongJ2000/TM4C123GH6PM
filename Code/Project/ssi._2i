@@ -1,0 +1,5 @@
+--c99 --gnu -c --cpu Cortex-M4.fp.sp -D__MICROLIB -O0 --apcs=interwork --signed_chars -I ..\User -I ..\Core -I ..\System -I ..\Library -I ..\Hardware
+-ID:\Keil_MDK\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+-ID:\Keil_MDK\ARM\CMSIS\Include
+-D__UVISION_VERSION="531" -DTM4C123GH6PM -Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RA1
+-o .\ssi.o --omf_browse .\ssi.crf --depend .\ssi.d --feedback ".\TM4C12x_Demo.fed" "..\Library\driverlib\ssi.c"

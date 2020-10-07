@@ -1,9 +1,10 @@
-./objects/system_tm4c123.o: ..\System\system_TM4C123.c \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  D:\Keil_MDK\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h \
-  D:\Keil_MDK\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h \
-  ..\Core\core_cm4.h ..\Core\cmsis_version.h ..\Core\cmsis_compiler.h \
-  ..\Core\cmsis_armclang.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\arm_acle.h ..\Core\mpu_armv7.h \
-  D:\Keil_MDK\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h
+.\objects\system_tm4c123.o: ..\System\system_TM4C123.c
+.\objects\system_tm4c123.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_tm4c123.o: D:\Keil_MDK\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h
+.\objects\system_tm4c123.o: D:\Keil_MDK\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h
+.\objects\system_tm4c123.o: ..\Core\core_cm4.h
+.\objects\system_tm4c123.o: ..\Core\cmsis_version.h
+.\objects\system_tm4c123.o: ..\Core\cmsis_compiler.h
+.\objects\system_tm4c123.o: ..\Core\cmsis_armcc.h
+.\objects\system_tm4c123.o: ..\Core\mpu_armv7.h
+.\objects\system_tm4c123.o: D:\Keil_MDK\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h

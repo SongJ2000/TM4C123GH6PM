@@ -330,6 +330,31 @@ extern "C"
 // Keil case.
 //
 //*****************************************************************************
+#if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION >= 6010050
+inline void
+EPIWorkaroundWordWrite(uint32_t *pui32Addr, uint32_t ui32Value)
+{
+  uint32_t ui32Scratch;
+
+	//
+	// Add a NOP to ensure we donӴ have a flash read immediately before
+	// the EPI read.
+	//
+	__asm("NOP");
+
+	//
+	// Perform the write we're actually interested in.
+	//
+	__asm("STR ui32Value, [pui32Addr]");
+
+	//
+	// Read from SRAM to ensure that we don't have an EPI write followed by
+	// a flash read.
+	//
+	__asm("LDR ui32Scratch, [__current_sp()]");
+}
+#else
 inline void
 EPIWorkaroundWordWrite(uint32_t *pui32Addr, uint32_t ui32Value)
 {
@@ -355,7 +380,36 @@ EPIWorkaroundWordWrite(uint32_t *pui32Addr, uint32_t ui32Value)
         LDR ui32Scratch, [__current_sp()]
     }
 }
+#endif
+#endif
 
+#if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION >= 6010050
+inline uint32_t
+EPIWorkaroundWordRead(uint32_t *pui32Addr)
+{
+  uint32_t ui32Value, ui32Scratch;
+
+	//
+	// Add a NOP to ensure we donӴ have a flash read immediately before
+	// the EPI read.
+	//
+	__asm("NOP");
+
+	//
+	// Perform the read we're actually interested in.
+	//
+	__asm("LDR ui32Value, [pui32Addr]");
+
+	//
+	// Read from SRAM to ensure that we don't have an EPI read followed by
+	// a flash read.
+	//
+	__asm("LDR ui32Scratch, [__current_sp()]");
+
+	return(ui32Value);
+}
+#else
 inline uint32_t
 EPIWorkaroundWordRead(uint32_t *pui32Addr)
 {
@@ -383,7 +437,34 @@ EPIWorkaroundWordRead(uint32_t *pui32Addr)
 
     return(ui32Value);
 }
+#endif
+#endif
 
+#if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION >= 6010050
+inline void
+EPIWorkaroundHWordWrite(uint16_t *pui16Addr, uint16_t ui16Value)
+{
+	uint32_t ui32Scratch;
+
+	//
+	// Add a NOP to ensure we donӴ have a flash read immediately before
+	// the EPI read.
+	//
+	__asm("NOP");
+
+	//
+	// Perform the write we're actually interested in.
+	//
+	__asm("STRH ui16Value, [pui16Addr]");
+
+	//
+	// Read from SRAM to ensure that we don't have an EPI write followed by
+	// a flash read.
+	//
+	__asm("LDR ui32Scratch, [__current_sp()]");
+}
+#else
 inline void
 EPIWorkaroundHWordWrite(uint16_t *pui16Addr, uint16_t ui16Value)
 {
@@ -409,7 +490,37 @@ EPIWorkaroundHWordWrite(uint16_t *pui16Addr, uint16_t ui16Value)
         LDR ui32Scratch, [__current_sp()]
     }
 }
+#endif
+#endif
 
+#if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION >= 6010050
+inline uint16_t
+EPIWorkaroundHWordRead(uint16_t *pui16Addr)
+{
+	uint32_t ui32Scratch;
+	uint16_t ui16Value;
+
+	//
+	// Add a NOP to ensure we donӴ have a flash read immediately before
+	// the EPI read.
+	//
+	__asm("NOP");
+
+	//
+	// Perform the read we're actually interested in.
+	//
+	__asm("LDRH ui16Value, [pui16Addr]");
+
+	//
+	// Read from SRAM to ensure that we don't have an EPI read followed by
+	// a flash read.
+	//
+	__asm("LDR ui32Scratch, [__current_sp()]");
+
+	return(ui16Value);
+}
+#else
 inline uint16_t
 EPIWorkaroundHWordRead(uint16_t *pui16Addr)
 {
@@ -438,7 +549,34 @@ EPIWorkaroundHWordRead(uint16_t *pui16Addr)
 
     return(ui16Value);
 }
+#endif
+#endif
 
+#if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION >= 6010050
+inline void
+EPIWorkaroundByteWrite(uint8_t *pui8Addr, uint8_t ui8Value)
+{
+	uint32_t ui32Scratch;
+
+	//
+	// Add a NOP to ensure we donӴ have a flash read immediately before
+	// the EPI read.
+	//
+	__asm("NOP");
+
+	//
+	// Perform the write we're actually interested in.
+	//
+	__asm("STRB ui8Value, [pui8Addr]");
+
+	//
+	// Read from SRAM to ensure that we don't have an EPI write followed by
+	// a flash read.
+	//
+	__asm("LDR ui32Scratch, [__current_sp()]");
+}
+#else
 inline void
 EPIWorkaroundByteWrite(uint8_t *pui8Addr, uint8_t ui8Value)
 {
@@ -464,7 +602,37 @@ EPIWorkaroundByteWrite(uint8_t *pui8Addr, uint8_t ui8Value)
         LDR ui32Scratch, [__current_sp()]
     }
 }
+#endif
+#endif
 
+#if defined(rvmdk) || defined(__ARMCC_VERSION)
+#if __ARMCC_VERSION >= 6010050
+inline uint8_t
+EPIWorkaroundByteRead(uint8_t *pui8Addr)
+{
+	uint32_t ui32Scratch;
+	uint8_t ui8Value;
+
+	//
+	// Add a NOP to ensure we donӴ have a flash read immediately before
+	// the EPI read.
+	//
+	__asm("NOP");
+
+	//
+	// Perform the read we're actually interested in.
+	//
+	__asm("LDRB ui8Value, [pui8Addr]");
+
+	//
+	// Read from SRAM to ensure that we don't have an EPI read followed by
+	// a flash read.
+	//
+	__asm("LDR ui32Scratch, [__current_sp()]");
+
+	return(ui8Value);
+}
+#else
 inline uint8_t
 EPIWorkaroundByteRead(uint8_t *pui8Addr)
 {
@@ -493,6 +661,8 @@ EPIWorkaroundByteRead(uint8_t *pui8Addr)
 
     return(ui8Value);
 }
+#endif
+#endif
 #endif
 
 #ifdef ccs

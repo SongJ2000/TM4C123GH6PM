@@ -1,20 +1,37 @@
-./objects/tft18.o: ..\Hardware\TFT\TFT18.c ..\Hardware\TFT\TFT18.h \
-  ..\System\system.h D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\string.h \
-  ..\Library\driverlib\adc.h ..\Library\driverlib\fpu.h \
-  ..\Library\driverlib\gpio.h ..\Library\driverlib\i2c.h \
-  ..\Library\driverlib\interrupt.h ..\Library\driverlib\pin_map.h \
-  ..\Library\driverlib\pwm.h ..\Library\driverlib\ssi.h \
-  ..\Library\driverlib\sysctl.h ..\Library\driverlib\systick.h \
-  ..\Library\driverlib\uart.h ..\Library\inc\hw_gpio.h \
-  ..\Library\inc\hw_memmap.h ..\Library\inc\hw_types.h \
-  ..\Library\inc\tm4c123gh6pm.h ..\Library\utils\uartstdio.h \
-  ..\Hardware\ADC\ADC.h ..\Hardware\CHIP\DAC081S101\DAC081S101.h \
-  ..\Hardware\CHIP\DAC7811\DAC7811.h ..\Hardware\IIC\myIIC.h \
-  ..\Hardware\KEY\KEY.h ..\Hardware\OLED\oled.h ..\Hardware\PWM\myPWM.h \
-  ..\Hardware\SPI\mySPI.h ..\Hardware\UART\myUART.h \
-  ..\Hardware\TFT\TFT18_Font.h
+.\objects\tft18.o: ..\Hardware\TFT\TFT18.c
+.\objects\tft18.o: ..\Hardware\TFT/TFT18.h
+.\objects\tft18.o: ..\System\system.h
+.\objects\tft18.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\tft18.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\tft18.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\tft18.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\tft18.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\tft18.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\string.h
+.\objects\tft18.o: ..\Library\driverlib/adc.h
+.\objects\tft18.o: ..\Library\driverlib/fpu.h
+.\objects\tft18.o: ..\Library\driverlib/gpio.h
+.\objects\tft18.o: ..\Library\driverlib/i2c.h
+.\objects\tft18.o: ..\Library\driverlib/interrupt.h
+.\objects\tft18.o: ..\Library\driverlib/pin_map.h
+.\objects\tft18.o: ..\Library\driverlib/pwm.h
+.\objects\tft18.o: ..\Library\driverlib/ssi.h
+.\objects\tft18.o: ..\Library\driverlib/sysctl.h
+.\objects\tft18.o: ..\Library\driverlib/systick.h
+.\objects\tft18.o: ..\Library\driverlib/uart.h
+.\objects\tft18.o: ..\Library\inc/hw_gpio.h
+.\objects\tft18.o: ..\Library\inc/hw_memmap.h
+.\objects\tft18.o: ..\Library\inc/hw_types.h
+.\objects\tft18.o: ..\Library\inc/tm4c123gh6pm.h
+.\objects\tft18.o: ..\Library\utils/uartstdio.h
+.\objects\tft18.o: ..\Hardware\ADC/ADC.h
+.\objects\tft18.o: ..\System\system.h
+.\objects\tft18.o: ..\Hardware\CHIP/DAC081S101/DAC081S101.h
+.\objects\tft18.o: ..\Hardware\CHIP/DAC7811/DAC7811.h
+.\objects\tft18.o: ..\Hardware\IIC/myIIC.h
+.\objects\tft18.o: ..\Hardware\KEY/KEY.h
+.\objects\tft18.o: ..\Hardware\OLED/oled.h
+.\objects\tft18.o: ..\Hardware\PWM/myPWM.h
+.\objects\tft18.o: ..\Hardware\SPI/mySPI.h
+.\objects\tft18.o: ..\Hardware\TFT/TFT18.h
+.\objects\tft18.o: ..\Hardware\UART/myUART.h
+.\objects\tft18.o: ..\Hardware\TFT/TFT18_Font.h

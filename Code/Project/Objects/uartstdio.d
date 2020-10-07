@@ -1,10 +1,15 @@
-./objects/uartstdio.o: ..\Library\utils\uartstdio.c \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  ..\Library\inc\hw_ints.h ..\Library\inc\hw_memmap.h \
-  ..\Library\inc\hw_types.h ..\Library\inc\hw_uart.h \
-  ..\Library\driverlib\debug.h ..\Library\driverlib\interrupt.h \
-  ..\Library\driverlib\rom.h ..\Library\driverlib\rom_map.h \
-  ..\Library\driverlib\sysctl.h ..\Library\driverlib\uart.h \
-  ..\Library\utils\uartstdio.h
+.\objects\uartstdio.o: ..\Library\utils\uartstdio.c
+.\objects\uartstdio.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\uartstdio.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uartstdio.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\uartstdio.o: ..\Library\inc/hw_ints.h
+.\objects\uartstdio.o: ..\Library\inc/hw_memmap.h
+.\objects\uartstdio.o: ..\Library\inc/hw_types.h
+.\objects\uartstdio.o: ..\Library\inc/hw_uart.h
+.\objects\uartstdio.o: ..\Library\driverlib/debug.h
+.\objects\uartstdio.o: ..\Library\driverlib/interrupt.h
+.\objects\uartstdio.o: ..\Library\driverlib/rom.h
+.\objects\uartstdio.o: ..\Library\driverlib/rom_map.h
+.\objects\uartstdio.o: ..\Library\driverlib/sysctl.h
+.\objects\uartstdio.o: ..\Library\driverlib/uart.h
+.\objects\uartstdio.o: ..\Library\utils/uartstdio.h

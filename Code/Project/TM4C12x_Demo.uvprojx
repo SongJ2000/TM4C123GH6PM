@@ -10,9 +10,9 @@
       <TargetName>Source</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pArmCC>6140000::V6.14::ARMCLANG</pArmCC>
-      <pCCUsed>6140000::V6.14::ARMCLANG</pCCUsed>
-      <uAC6>1</uAC6>
+      <pArmCC>5060750::V5.06 update 6 (build 750)::.\ARMCC</pArmCC>
+      <pCCUsed>5060750::V5.06 update 6 (build 750)::.\ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>TM4C123GH6PM</Device>
@@ -49,7 +49,7 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Objects\</OutputDirectory>
+          <OutputDirectory>.\</OutputDirectory>
           <OutputName>TM4C12x_Demo</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
@@ -57,7 +57,7 @@
           <DebugInformation>0</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
-          <HexFormatSelection>1</HexFormatSelection>
+          <HexFormatSelection>0</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
           <BeforeCompile>
@@ -121,7 +121,7 @@
         </DllOption>
         <DebugOption>
           <OPTHX>
-            <HexSelection>1</HexSelection>
+            <HexSelection>0</HexSelection>
             <HexRangeLowAddress>0</HexRangeLowAddress>
             <HexRangeHighAddress>0</HexRangeHighAddress>
             <HexOffset>0</HexOffset>
@@ -134,12 +134,12 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>0</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <Capability>1</Capability>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>5</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -323,7 +323,7 @@
             <PlainCh>1</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>3</wLevel>
+            <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -338,7 +338,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>PART_TM4C123GH6PM,TARGET_IS_BLIZZARD_RA1,TM4C123GH6PM</Define>
+              <Define>rvmdk PART_TM4C123GH6PM TARGET_IS_TM4C123_RA1</Define>
               <Undefine></Undefine>
               <IncludePath>..\User;..\Core;..\System;..\Library;..\Hardware</IncludePath>
             </VariousControls>
@@ -440,16 +440,6 @@
               <FilePath>..\Hardware\OLED\oled.c</FilePath>
             </File>
             <File>
-              <FileName>TFT18.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\TFT\TFT18.c</FilePath>
-            </File>
-            <File>
-              <FileName>TFT18_Font.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\TFT\TFT18_Font.c</FilePath>
-            </File>
-            <File>
               <FileName>ADC.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardware\ADC\ADC.c</FilePath>
@@ -458,11 +448,6 @@
               <FileName>KEY.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardware\KEY\KEY.c</FilePath>
-            </File>
-            <File>
-              <FileName>DAC081S101.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Hardware\CHIP\DAC081S101\DAC081S101.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -475,49 +460,14 @@
               <FilePath>..\Library\driverlib\adc.c</FilePath>
             </File>
             <File>
-              <FileName>aes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\aes.c</FilePath>
-            </File>
-            <File>
-              <FileName>can.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\can.c</FilePath>
-            </File>
-            <File>
-              <FileName>comp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\comp.c</FilePath>
-            </File>
-            <File>
               <FileName>cpu.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\driverlib\cpu.c</FilePath>
             </File>
             <File>
-              <FileName>crc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\crc.c</FilePath>
-            </File>
-            <File>
-              <FileName>des.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\des.c</FilePath>
-            </File>
-            <File>
               <FileName>eeprom.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\driverlib\eeprom.c</FilePath>
-            </File>
-            <File>
-              <FileName>emac.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\emac.c</FilePath>
-            </File>
-            <File>
-              <FileName>epi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\epi.c</FilePath>
             </File>
             <File>
               <FileName>flash.c</FileName>
@@ -535,11 +485,6 @@
               <FilePath>..\Library\driverlib\gpio.c</FilePath>
             </File>
             <File>
-              <FileName>hibernate.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\hibernate.c</FilePath>
-            </File>
-            <File>
               <FileName>i2c.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\driverlib\i2c.c</FilePath>
@@ -550,34 +495,9 @@
               <FilePath>..\Library\driverlib\interrupt.c</FilePath>
             </File>
             <File>
-              <FileName>lcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\lcd.c</FilePath>
-            </File>
-            <File>
-              <FileName>mpu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\mpu.c</FilePath>
-            </File>
-            <File>
-              <FileName>onewire.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\onewire.c</FilePath>
-            </File>
-            <File>
               <FileName>pwm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\driverlib\pwm.c</FilePath>
-            </File>
-            <File>
-              <FileName>qei.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\qei.c</FilePath>
-            </File>
-            <File>
-              <FileName>shamd5.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\shamd5.c</FilePath>
             </File>
             <File>
               <FileName>ssi.c</FileName>
@@ -585,19 +505,9 @@
               <FilePath>..\Library\driverlib\ssi.c</FilePath>
             </File>
             <File>
-              <FileName>sw_crc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\sw_crc.c</FilePath>
-            </File>
-            <File>
               <FileName>sysctl.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\driverlib\sysctl.c</FilePath>
-            </File>
-            <File>
-              <FileName>sysexc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\sysexc.c</FilePath>
             </File>
             <File>
               <FileName>systick.c</FileName>
@@ -618,11 +528,6 @@
               <FileName>udma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Library\driverlib\udma.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Library\driverlib\usb.c</FilePath>
             </File>
             <File>
               <FileName>watchdog.c</FileName>

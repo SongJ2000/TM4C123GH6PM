@@ -89,16 +89,26 @@ uint32_t CPUcpsid(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
-#if __ARMCC_VERSION > 6
-uint32_t
-CPUcpsid(void)
-{
-    //
-    // Read PRIMASK and disable interrupts.
-    //
-    __asm("mrs     r0, PRIMASK");
-    __asm("cpsid   i");
-    __asm("bx      lr");
+#if __ARMCC_VERSION >= 6010050
+uint32_t CPUcpsid(void) {
+  uint32_t ui32Ret;
+
+  //
+  // Read PRIMASK and disable interrupts.
+  //
+  __asm(
+      "    mrs     r0, PRIMASK\n"
+      "    cpsid   i\n"
+      "    bx      lr\n"
+      : "=r"(ui32Ret));
+
+  //
+  // The return is handled in the inline assembly, but the compiler will
+  // still complain if there is not an explicit return here (despite the fact
+  // that this does not result in any code being produced because of the
+  // naked attribute).
+  //
+  return (ui32Ret);
 }
 #else
 __asm uint32_t
@@ -178,15 +188,25 @@ uint32_t CPUprimask(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
-#if __ARMCC_VERSION > 6
-uint32_t
-CPUprimask(void)
-{
-    //
-    // Read PRIMASK and disable interrupts.
-    //
-    __asm("mrs     r0, PRIMASK");
-    __asm("bx      lr");
+#if __ARMCC_VERSION >= 6010050
+uint32_t CPUprimask(void) {
+  uint32_t ui32Ret;
+
+  //
+  // Read PRIMASK and disable interrupts.
+  //
+  __asm(
+      "    mrs     r0, PRIMASK\n"
+      "    bx      lr\n"
+      : "=r"(ui32Ret));
+
+  //
+  // The return is handled in the inline assembly, but the compiler will
+  // still complain if there is not an explicit return here (despite the fact
+  // that this does not result in any code being produced because of the
+  // naked attribute).
+  //
+  return (ui32Ret);
 }
 #else
 __asm uint32_t
@@ -267,16 +287,26 @@ uint32_t CPUcpsie(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
-#if __ARMCC_VERSION > 6
-uint32_t
-CPUcpsie(void)
-{
-    //
-    // Read PRIMASK and enable interrupts.
-    //
-    __asm("mrs     r0, PRIMASK");
-    __asm("cpsie   i");
-    __asm("bx      lr");
+#if __ARMCC_VERSION >= 6010050
+uint32_t CPUcpsie(void) {
+  uint32_t ui32Ret;
+
+  //
+  // Read PRIMASK and enable interrupts.
+  //
+  __asm(
+      "    mrs     r0, PRIMASK\n"
+      "    cpsie   i\n"
+      "    bx      lr\n"
+      : "=r"(ui32Ret));
+
+  //
+  // The return is handled in the inline assembly, but the compiler will
+  // still complain if there is not an explicit return here (despite the fact
+  // that this does not result in any code being produced because of the
+  // naked attribute).
+  //
+  return (ui32Ret);
 }
 #else
 __asm uint32_t
@@ -336,7 +366,7 @@ void CPUwfi(void) {
 }
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
-#if __ARMCC_VERSION > 6
+#if __ARMCC_VERSION >= 6010050
 void
 CPUwfi(void)
 {
@@ -391,7 +421,7 @@ void CPUbasepriSet(uint32_t ui32NewBasepri) {
 }
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
-#if __ARMCC_VERSION > 6
+#if __ARMCC_VERSION >= 6010050
 void
 CPUbasepriSet(uint32_t ui32NewBasepri)
 {
@@ -465,15 +495,25 @@ uint32_t CPUbasepriGet(void) {
 #pragma diag_default = Pe940
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
-#if __ARMCC_VERSION > 6
-uint32_t
-CPUbasepriGet(void)
-{
-    //
-    // Read BASEPRI
-    //
-    __asm("mrs     r0, BASEPRI");
-    __asm("bx      lr");
+#if __ARMCC_VERSION >= 6010050
+uint32_t CPUbasepriGet(void) {
+  uint32_t ui32Ret;
+
+  //
+  // Read BASEPRI
+  //
+  __asm(
+      "    mrs     r0, BASEPRI\n"
+      "    bx      lr\n"
+      : "=r"(ui32Ret));
+
+  //
+  // The return is handled in the inline assembly, but the compiler will
+  // still complain if there is not an explicit return here (despite the fact
+  // that this does not result in any code being produced because of the
+  // naked attribute).
+  //
+  return (ui32Ret);
 }
 #else
 __asm uint32_t

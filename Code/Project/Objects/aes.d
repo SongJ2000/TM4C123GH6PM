@@ -1,8 +1,12 @@
-./objects/aes.o: ..\Library\driverlib\aes.c \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  ..\Library\inc\hw_aes.h ..\Library\inc\hw_ccm.h \
-  ..\Library\inc\hw_ints.h ..\Library\inc\hw_memmap.h \
-  ..\Library\inc\hw_nvic.h ..\Library\inc\hw_types.h \
-  ..\Library\driverlib\aes.h ..\Library\driverlib\debug.h \
-  ..\Library\driverlib\interrupt.h
+.\objects\aes.o: ..\Library\driverlib\aes.c
+.\objects\aes.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\aes.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\aes.o: ..\Library\inc/hw_aes.h
+.\objects\aes.o: ..\Library\inc/hw_ccm.h
+.\objects\aes.o: ..\Library\inc/hw_ints.h
+.\objects\aes.o: ..\Library\inc/hw_memmap.h
+.\objects\aes.o: ..\Library\inc/hw_nvic.h
+.\objects\aes.o: ..\Library\inc/hw_types.h
+.\objects\aes.o: ..\Library\driverlib/aes.h
+.\objects\aes.o: ..\Library\driverlib/debug.h
+.\objects\aes.o: ..\Library\driverlib/interrupt.h

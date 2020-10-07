@@ -1,0 +1,11 @@
+.\timer.o: ..\Library\driverlib\timer.c
+.\timer.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\timer.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\timer.o: ..\Library\inc/hw_ints.h
+.\timer.o: ..\Library\inc/hw_memmap.h
+.\timer.o: ..\Library\inc/hw_timer.h
+.\timer.o: ..\Library\inc/hw_types.h
+.\timer.o: ..\Library\inc/hw_sysctl.h
+.\timer.o: ..\Library\driverlib/debug.h
+.\timer.o: ..\Library\driverlib/interrupt.h
+.\timer.o: ..\Library\driverlib/timer.h

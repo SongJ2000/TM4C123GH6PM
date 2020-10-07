@@ -60,3 +60,16 @@ void Delay_us(uint32_t us) {
   while (GetSysTime_us() < delayTime)
     ;
 }
+
+void BasicSystemInit(void) {
+  /* 使能浮点运算单元 */
+  FPUEnable();
+  FPULazyStackingEnable();
+  /* 设置主频为80MHz */
+  SysCtlClockSet(SYSCTL_OSC_MAIN | SYSCTL_XTAL_16MHZ | SYSCTL_USE_PLL |
+                 SYSCTL_SYSDIV_2_5);
+  /* SysTick初始化 */
+  SysTickInit();
+  /* 调试串口初始化 */
+  UART0Init();
+}

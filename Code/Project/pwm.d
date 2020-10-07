@@ -1,0 +1,11 @@
+.\pwm.o: ..\Library\driverlib\pwm.c
+.\pwm.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\pwm.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\pwm.o: ..\Library\inc/hw_ints.h
+.\pwm.o: ..\Library\inc/hw_memmap.h
+.\pwm.o: ..\Library\inc/hw_pwm.h
+.\pwm.o: ..\Library\inc/hw_sysctl.h
+.\pwm.o: ..\Library\inc/hw_types.h
+.\pwm.o: ..\Library\driverlib/debug.h
+.\pwm.o: ..\Library\driverlib/interrupt.h
+.\pwm.o: ..\Library\driverlib/pwm.h

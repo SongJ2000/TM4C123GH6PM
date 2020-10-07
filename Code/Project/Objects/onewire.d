@@ -1,8 +1,12 @@
-./objects/onewire.o: ..\Library\driverlib\onewire.c \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  ..\Library\inc\hw_ints.h ..\Library\inc\hw_memmap.h \
-  ..\Library\inc\hw_onewire.h ..\Library\inc\hw_sysctl.h \
-  ..\Library\inc\hw_types.h ..\Library\driverlib\debug.h \
-  ..\Library\driverlib\interrupt.h ..\Library\driverlib\onewire.h \
-  ..\Library\driverlib\sysctl.h
+.\objects\onewire.o: ..\Library\driverlib\onewire.c
+.\objects\onewire.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\onewire.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\onewire.o: ..\Library\inc/hw_ints.h
+.\objects\onewire.o: ..\Library\inc/hw_memmap.h
+.\objects\onewire.o: ..\Library\inc/hw_onewire.h
+.\objects\onewire.o: ..\Library\inc/hw_sysctl.h
+.\objects\onewire.o: ..\Library\inc/hw_types.h
+.\objects\onewire.o: ..\Library\driverlib/debug.h
+.\objects\onewire.o: ..\Library\driverlib/interrupt.h
+.\objects\onewire.o: ..\Library\driverlib/onewire.h
+.\objects\onewire.o: ..\Library\driverlib/sysctl.h

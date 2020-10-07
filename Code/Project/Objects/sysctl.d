@@ -1,8 +1,12 @@
-./objects/sysctl.o: ..\Library\driverlib\sysctl.c \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Library\inc\hw_ints.h ..\Library\inc\hw_nvic.h \
-  ..\Library\inc\hw_sysctl.h ..\Library\inc\hw_types.h \
-  ..\Library\inc\hw_flash.h ..\Library\driverlib\cpu.h \
-  ..\Library\driverlib\debug.h ..\Library\driverlib\interrupt.h \
-  ..\Library\driverlib\sysctl.h
+.\objects\sysctl.o: ..\Library\driverlib\sysctl.c
+.\objects\sysctl.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\sysctl.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sysctl.o: ..\Library\inc/hw_ints.h
+.\objects\sysctl.o: ..\Library\inc/hw_nvic.h
+.\objects\sysctl.o: ..\Library\inc/hw_sysctl.h
+.\objects\sysctl.o: ..\Library\inc/hw_types.h
+.\objects\sysctl.o: ..\Library\inc/hw_flash.h
+.\objects\sysctl.o: ..\Library\driverlib/cpu.h
+.\objects\sysctl.o: ..\Library\driverlib/debug.h
+.\objects\sysctl.o: ..\Library\driverlib/interrupt.h
+.\objects\sysctl.o: ..\Library\driverlib/sysctl.h

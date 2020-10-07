@@ -1844,7 +1844,7 @@ SysCtlDelay(uint32_t ui32Count)
 }
 #endif
 #if defined(rvmdk) || defined(__ARMCC_VERSION)
-#if __ARMCC_VERSION > 6
+#if __ARMCC_VERSION >= 6010050
 void
 SysCtlDelay(uint32_t ui32Count)
 {

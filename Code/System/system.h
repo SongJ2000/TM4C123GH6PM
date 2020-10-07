@@ -32,14 +32,11 @@
 
 /*----------外设库----------*/
 #include "ADC/ADC.h"
-#include "CHIP/DAC081S101/DAC081S101.h"
-#include "CHIP/DAC7811/DAC7811.h"
 #include "IIC/myIIC.h"
 #include "KEY/KEY.h"
 #include "OLED/oled.h"
 #include "PWM/myPWM.h"
 #include "SPI/mySPI.h"
-#include "TFT/TFT18.h"
 #include "UART/myUART.h"
 
 /* 系统定时器初始化 */
@@ -56,5 +53,8 @@ void Delay_ms(uint32_t ms);
 
 /* 微秒级延时 */
 void Delay_us(uint32_t us);
+
+/* 系统及基本外设初始化 */
+void BasicSystemInit(void);
 
 #endif

@@ -1,7 +1,11 @@
-./objects/epi.o: ..\Library\driverlib\epi.c \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  D:\Keil_MDK\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Library\inc\hw_epi.h ..\Library\inc\hw_ints.h \
-  ..\Library\inc\hw_memmap.h ..\Library\inc\hw_sysctl.h \
-  ..\Library\inc\hw_types.h ..\Library\driverlib\debug.h \
-  ..\Library\driverlib\epi.h ..\Library\driverlib\interrupt.h
+.\objects\epi.o: ..\Library\driverlib\epi.c
+.\objects\epi.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\epi.o: D:\Keil_MDK\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\epi.o: ..\Library\inc/hw_epi.h
+.\objects\epi.o: ..\Library\inc/hw_ints.h
+.\objects\epi.o: ..\Library\inc/hw_memmap.h
+.\objects\epi.o: ..\Library\inc/hw_sysctl.h
+.\objects\epi.o: ..\Library\inc/hw_types.h
+.\objects\epi.o: ..\Library\driverlib/debug.h
+.\objects\epi.o: ..\Library\driverlib/epi.h
+.\objects\epi.o: ..\Library\driverlib/interrupt.h
